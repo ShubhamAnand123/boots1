@@ -99,7 +99,7 @@ body{
     border: none;
     border-radius: 20px;
     margin:7px;
-    background:linear-gradient(to right,#8e8e8e,#021248) !important; ;
+    background-image: linear-gradient(to right,#070aa2,#021248);
 }
 #about-us{
     background: #efeff3af;
@@ -127,6 +127,11 @@ body{
     border-left:4px solid #050780;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+#testimonials .title{
+    font-weight: 500;
+    margin: 30px;
+    font-size: 35px;
 }
 .testimonials img{
     height: 60px;
