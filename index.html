@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
@@ -30,30 +34,33 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">Home </a>                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a data-scroll class="nav-link" href="#home">HOME</a>                <li class="nav-item">
+                  <a class="nav-link" href="#services">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#about-us">ABOUT US</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">Disabled</a>
+                  <a class="nav-link"  href="#testimonials">TESTIMONIALS</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#footer">CONTACT</a>
+                  </li>
               </ul>
             </div>
           </nav>
           
     </section>
 
-        <section id="footer">
+        <section id="footer" id="home">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 fd">
                         <p class="promo"> SAGOCS</p>
                         <p>Get in touch with our group of companies and invest in us and be profitable for you lifetime.<br>INVEST MORE BECOME PROFITABLE SOON  </p>                  
                     </div>
                     <div class="col-md-6 text-center">
-                        <img src="home2.png" class="img-fluid">
+                        <img src="home2.png" class="img-fluid pic">
                     </div>
                 </div>
             </div>
@@ -67,21 +74,23 @@
     </section>
     <section id="services">
         <div class="container text-center">
+            <br>
+            <br>
             <h1 class="title">WHAT WE DO?</h1>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-4 l">
                     <img src="service1.png" class="service-img">
                     <h4>Growth Marketing</h4>
                     <p>Get in touch with our group of companies and invest in us and be profitable for you lifetime.<br>INVEST MORE BECOME PROFITABLE SOON  </p>                  
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 m">
                     <img src="service2.png" class="service-img">
                     <h4>Online Branding</h4>
                     <p>Get in touch with our group of companies and invest in us and be profitable for you lifetime.<br>INVEST MORE BECOME PROFITABLE SOON  </p>                  
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 r">
                     <img src="service3.png" class="service-img">
                     <h4>Animated Ads</h4>
                     <p>Get in touch with our group of companies and invest in us and be profitable for you lifetime.<br>INVEST MORE BECOME PROFITABLE SOON  </p>                  
@@ -89,6 +98,9 @@
                 </div>
             </div>
             <button  class="btn btn-primary">All Services</button>
+
+            <br>
+            <br>
         </div>
     </section>
     <section id="about-us">
@@ -96,7 +108,7 @@
             <h1 class="title text-center">WHY CHOOSE US?</h1>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Why we're Different</p>
+                    <p><h1>Why we're Different....</h1></p>
                     <ul>
                         <li>Believing in doing buisness with  honesty</li>
                         <li>Believing in doing buisness with  honesty</li>
@@ -117,17 +129,17 @@
         <div class="container">
             <h1 class="title text-center">WHAT CLIENT SAY?</h1>
             <div class="row">
-            <div class="col-md-4 testimonials">
+            <div class="col-md-4 testimonials l">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, debitis corporis, delectus hic distinctio maxime at veritatis rem, omnis quam quo facilis eos quos repellendus quasi ab. Accusantium harum tempora quia voluptatibus similique ipsum?</p>
                 <img src="user1.jpg">
                 <p class="user"><b>Angelina</b><br>Co-founder at xyz</p>
             </div>
-            <div class="col-md-4 testimonials">
+            <div class="col-md-4 testimonials m">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, debitis corporis, delectus hic distinctio maxime at veritatis rem, omnis quam quo facilis eos quos repellendus quasi ab. Accusantium harum tempora quia voluptatibus similique ipsum?</p>
                 <img src="user2.jpg">
                 <p class="user"><b> Robert</b><br>Analyst at xyz</p>
             </div>
-            <div class="col-md-4 testimonials">
+            <div class="col-md-4 testimonials r">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, debitis corporis, delectus hic distinctio maxime at veritatis rem, omnis quam quo facilis eos quos repellendus quasi ab. Accusantium harum tempora quia voluptatibus similique ipsum?</p>
                 <img src="user1.jpg">
                 <p class="user"><b>Christania</b><br>Director at xyz</p>
@@ -176,5 +188,141 @@
         <hr>
         <p class="copy">MADE BY ::: SHUBHAM ANAND</p>
     </section>
+    <script>
+        window.sr=ScrollReveal();
+        sr.reveal('.navbar',{
+            duration:2000,
+            origin:'right'
+        });
+        sr.reveal('#footer .pic',{
+            duration:2000,
+            delay:400,
+            origin:'right',
+            distance:'300px'
+        });
+        sr.reveal('.fd',{
+            duration:2000,
+            origin:'left',
+            distance:'300px'
+        });
+        sr.reveal('#services h1',{
+            duration:1000,
+            origin:'left',
+            distance:'120px',
+            viewFactor:0.2
+
+        });
+        sr.reveal('#services .l',{
+            duration:500,
+            origin:'left',
+            distance:'100px',
+            viewFactor:0.1
+
+        });
+        sr.reveal('#services .r',{
+            duration:500,
+            origin:'right',
+            distance:'100px',
+            viewFactor:0.1
+
+        });
+        sr.reveal('#services .m',{
+            duration:500,
+            origin:'top',
+
+        });
+        sr.reveal('#about-us h1',{
+            duration:1000,
+            origin:'left',
+            distance:'120px',
+            viewFactor:0.2
+
+        });
+        sr.reveal('#about-us p',{
+            duration:1000,
+            origin:'left',
+            distance:'120px',
+            viewFactor:0.2
+
+        });
+        sr.reveal('#services .btn',{
+            duration:200,
+            delay:1400,
+            viewFactor:0.2
+
+        });
+        sr.reveal('#about-us li',{
+            duration:1000,
+            origin:'right',
+            delay:500,
+            distance:'120px',
+
+        });
+        sr.reveal('#about-us img',{
+            duration:1000,
+            origin:'top',
+            distance:'120px',
+
+        });
+        
+        sr.reveal('#testimonials h1',{
+            duration:1000,
+            origin:'left',
+            distance:'120px',
+            viewFactor:0.2
+
+        });
+        sr.reveal('#testimonials .l',{
+            duration:1000,
+            origin:'left',
+            distance:'300px',
+            viewFactor:0.2
+
+        });
+        sr.reveal('#testimonials .m',{
+            duration:1000,
+            origin:'right',
+            distance:'300px',
+            viewFactor:0.2
+
+        });
+        sr.reveal('#testimonials .r',{
+            duration:2000,
+            origin:'right',
+            viewFactor:0.2
+
+        });
+        sr.reveal('#social p',{
+            duration:2000,
+            origin:'left',
+            distance:'300px',
+            viewFactor:0.2
+
+        });
+        sr.reveal('#social a',{
+            duration:2000,
+            origin:'right',
+            delay:500,
+            distance:'400px',
+            viewFactor:0.2
+
+        });
+        sr.reveal(".copy",{
+            duration:2000,
+            origin:'right',
+            delay:500,
+            distance:'400px',
+            viewFactor:0.2
+
+        })
+        
+            
+        
+       
+    </script>
+    <script>
+        	var scroll = new SmoothScroll('a[href*="#"]');
+
+    </script>
 </body>
 </html>
