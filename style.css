@@ -229,3 +229,49 @@ body{
     display: block;
     transform: translateY(-8px);
 }
+.sr{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:80px;
+
+}
+
+.counter-box {
+	display: block;
+	background: #f6f6f6;
+	padding: 20px 10px;
+	text-align: center
+}
+
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: #070aa2;
+	font-size: 18px;
+	font-weight: 500
+}
+
+.counter-box i {
+	font-size: 60px;
+	color: #d2d2d2
+}
+
+.counter { 
+	display: block;
+	font-size: 22px;
+	font-weight: 700;
+	color: #070aa2;
+	line-height: 28px
+}
+
+.counter-box.colored {
+      background: #070aa2;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}
