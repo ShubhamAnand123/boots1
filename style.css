@@ -284,3 +284,23 @@ body{
 .counter-box.colored .counter {
 	color: #fff
 }
+.p{
+    position: fixed;
+    bottom:20px;
+    height:45px;
+    left:20px;
+    width:42px;
+    border-radius: 60%;
+    border:none;
+    background-color: #65035b;
+    color:white;
+    text-shadow: 2px 2px 2px 2px rgb(239, 239, 242);
+    cursor: pointer;
+    scroll-behavior: smooth;
+    z-index: 14;
+    
+}
+.p i{
+    width:40px;
+    font-size: 25px;
+}
