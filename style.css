@@ -379,5 +379,10 @@ padding: 20px;
    
   
   }
+  .contain{
+    align-items: center;
+    
+    transform: translateX(200px);
+  }
  
  
